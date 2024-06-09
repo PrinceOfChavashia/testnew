@@ -1,0 +1,45 @@
+@import './reset.css';
+@import './checkBox.css';
+@import './todo.scss';
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+#app{
+  font-family: Nunito;
+}
+
+.container{
+  margin: auto;
+  margin-top: 40px;
+  width: 90%;
+}
+.progress{
+  display: flex;
+  gap: 5px;
+}
+.anim_todo-enter-active, .anim_todo-leave-active {
+  transition: all .5s ease;
+}
+.anim_todo-enter-from{
+  opacity: 0;
+}
+.anim_todo-leave-to{
+  transform: scale(0, 0);
+}
+nav{
+  color: #81A645;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 32px;
+  
+  a:visited{
+    color: #81A645;
+  }
+  a:hover{
+    color: #A64574;
+  }
+  a:active{
+    color: #FFD4E9;
+  }
+}
+
